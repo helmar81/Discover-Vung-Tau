@@ -1,0 +1,125 @@
+---
+
+
+ import Layout from '../layouts/Layout.astro';
+
+import Main from "../components/Main.astro";
+
+import { Image } from 'astro:assets';
+import Card from '../components/Card.astro';
+
+
+
+
+import H1 from "../components/H1.astro";
+import { Icon } from "astro-icon";
+
+---
+
+
+<Layout title="Guide">
+
+	<Main>
+    
+<h2 class="text-center uppercase">Vung Tau is a lively and bustling area with a high density of restaurants and coffee shops that offer a variety of cuisines and beverages. You can also find many massage shops where you can relax and enjoy a soothing treatment. The nightlife is vibrant and exciting, with many bars, clubs, and karaoke venues to choose from. Whether you are looking for a casual or a fancy experience, it has something for everyone.</h2>
+		
+
+
+		<ul role="list" class="link-card-grid ">
+			<Card
+				href="/restaurants"
+				title="Restaurants"
+				body="where to eat"
+				icon="uil:envelope"
+			
+				/>
+			
+			<Card
+				href="/coffee"
+				title="Coffee Shops"
+				body="there are plenty of them"
+				icon="uil:envelope"
+			/>
+			<Card
+				href="/nightlife"
+				title="Nightlife"
+				body="explore the many bars here"
+				icon="uil:envelope"
+			/>
+			<Card
+				href="/wellness"
+				title="Wellness"
+				body="Massage or medical treatment ❤️"
+				icon="uil:envelope"
+			/>
+		</ul>
+		<p>still in progress</p>
+
+		<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+			Back
+		  </button>
+	</Main>
+
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 11rem;
+		width: 800px;
+		max-width: 200px;
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+		padding: 8;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 3em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.8em 0.7em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 8;
+		
+	}
+</style>
+
