@@ -5,26 +5,19 @@ import H1 from "../components/H1.astro";
 
 import Main from "../components/Main.astro";
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> b03057a5e67eec2ba918761708a648995a333ac2
+import { Image } from "astro:assets"
+// Import a reference to the image itself
+import sunset from "../images/sunset.webp"
+import coffee from "../images/coffee.jpg"
 
 ---
 
 <Layout title="Discover Vung Tau">
 	
 	<Main>
-<<<<<<< HEAD
 		<H1 text="Vung Tau"/>
 		
-
-=======
-		
->>>>>>> b03057a5e67eec2ba918761708a648995a333ac2
-<img 
-src="../images/sunset.webp" alt="wellness=" class="rounded-2xl shadow-xl mb-4  object-cover inline">
+<Image src={sunset} alt="sunset" class="rounded-2xl shadow-xl mb-4  object-cover inline"  decoding="async" loading="lazy"/>
 
 
 
@@ -51,7 +44,6 @@ src="../images/sunset.webp" alt="wellness=" class="rounded-2xl shadow-xl mb-4  o
 	 
 	</div>
   </div>
-
 
 	</Main>
 

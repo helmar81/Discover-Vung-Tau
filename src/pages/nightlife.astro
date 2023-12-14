@@ -2,6 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 
 import H1 from "../components/H1.astro";
+
+import nightlife from "../images/nightlife.jpg"
+
+import { Image } from "astro:assets"
+
 ---
 
 
@@ -10,7 +15,9 @@ import H1 from "../components/H1.astro";
 			
         <H1 text="Nightlife"/>
 
-        <img src="../images/nightlife.jpg" alt="wellness=" class="rounded-2xl shadow-xl mb-4 py-7  object-cover">
+        <div class="flex justify-center items-center">
+			<Image src={nightlife} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
+		</div>
 		  
 		
   <h2> in progress</h2>
