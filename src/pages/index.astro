@@ -7,9 +7,7 @@ import Main from "../components/Main.astro";
 
 import { Image } from 'astro:assets';
 
-if (import.meta.env.PROD) {
-  Astro.locals.runtime.setBuildersTtl(45);
-}
+
 
 ---
 
@@ -17,7 +15,7 @@ if (import.meta.env.PROD) {
 	
 	<Main>
 		<H1 text="Vung Tau"/>
-		{new Date(Date.now())}
+		
 
 <img 
 src="../images/sunset.webp" alt="wellness=" class="rounded-2xl shadow-xl mb-4  object-cover inline">
