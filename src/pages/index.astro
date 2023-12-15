@@ -6,9 +6,12 @@ import H1 from "../components/H1.astro";
 import Main from "../components/Main.astro";
 
 import { Image } from "astro:assets"
-// Import a reference to the image itself
-import sunset from "../images/sunset.webp"
-import coffee from "../images/coffee.jpg"
+// Import a reference to the image itselfmport sunset from "../images/sunset.webp
+
+
+import sunset from "../images/sunset.jpg"
+
+import vt from "../images/vt.png"
 
 ---
 
@@ -17,7 +20,7 @@ import coffee from "../images/coffee.jpg"
 	<Main>
 		<H1 text="Vung Tau"/>
 		
-<Image src={sunset} alt="sunset" class="rounded-2xl shadow-xl mb-4  object-cover inline"  decoding="async" loading="lazy"/>
+<Image src={vt} alt="sunset" class="rounded-2xl shadow-xl mb-4  object-cover inline" width="1024" height="800" decoding="async" loading="lazy"/>
 
 
 

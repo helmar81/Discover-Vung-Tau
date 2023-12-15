@@ -6,7 +6,6 @@ import Main from "../components/Main.astro";
 
 import Card from '../components/Card.astro';
 
-import { Icon } from "astro-icon";
 
 
 
@@ -26,7 +25,7 @@ import { Icon } from "astro-icon";
 				href="/restaurants"
 				title="Restaurants"
 				body="where to eat"
-				icon="uil:restaurant"
+				
 			
 				/>
 			
@@ -34,35 +33,44 @@ import { Icon } from "astro-icon";
 				href="/coffee"
 				title="Coffee Shops"
 				body="there are plenty of them"
-				icon="uil:envelope"
+				
 			/>
 			<Card
 				href="/nightlife"
 				title="Nightlife"
 				body="explore the many bars here"
-				icon="uil:envelope"
+				
 			/>
 			<Card
 				href="/wellness"
 				title="Wellness"
 				body="Massage or medical treatment ❤️"
-				icon="uil:envelope"
+				
 			/>
 
 			<Card
 				href="/accomodation"
 				title="Accomodation"
 				body="you have many options"
-				icon="uil:envelope"
+				
 			/>
 
 			<Card
 				href="/hotel"
 				title="Hotel"
 				body="thousands of hotels"
-				icon="uil:envelope"
+				
 			/>
 		</ul>
+
+		<a href="/" class="flex items-center gap-x-3 ">
+			<img
+				src="/forward.png"
+				alt="forward icon"
+				width={48}
+				height={44}
+				class=" color grayscale align-right"
+			/>
 		
 	</Main>
 
