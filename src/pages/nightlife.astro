@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
+import Main from "../components/Main.astro";
+
 import H1 from "../components/H1.astro";
 
 import nightlife from "../images/nightlife.jpg"
@@ -12,7 +14,7 @@ import { Image } from "astro:assets"
 
 		<Layout title="Nightlife">
 
-			
+			<Main>
         <H1 text="Nightlife"/>
 
         <div class="flex justify-center items-center">
@@ -22,6 +24,13 @@ import { Image } from "astro:assets"
 		
   <h2> in progress</h2>
   
-  
+  <a href="/wellness" class="flex items-center gap-x-3 ">
+	<img
+		src="/forward.png"
+		alt="forward icon"
+		width={48}
+		height={44}
+		class=" color grayscale align-right"
+	/>
 		</Layout>
 

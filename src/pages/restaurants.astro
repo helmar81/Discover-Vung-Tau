@@ -9,21 +9,35 @@ import Button from "../components/button.astro";
 import { Image } from "astro:assets"
 
 import kem from "../images/kem.jpg"
-import fishMarket from "../images/fishMarket.jpg"
+import menue from "../images/menue.webp"
+import forward from "../images/forward.png"
+
+import shrimps from "../images/shrimps.jpg"
 
 ---
 
 <Layout title="Restaurants">
-	
+	<Main>
 		<H1 text="Dinning"/>
 
 		<div class="flex justify-center items-center">
 			<Image src={kem} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
 		</div>
 		<div class="flex justify-center items-center">
-		<Image src={fishMarket} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
+			<Image src={shrimps} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
+		</div>
+		<div class="flex justify-center items-center">
+		<Image src={menue} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
 	</div>
 
+	<a href="/coffee" class="flex items-center gap-x-3 ">
+		<img
+			src="/forward.png"
+			alt="forward icon"
+			width={48}
+			height={44}
+			class=" color grayscale align-right"
+		/>
 	
 </Main>
 

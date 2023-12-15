@@ -1,18 +1,14 @@
 ---
 
-
- import Layout from '../layouts/Layout.astro';
+import Layout from '../layouts/Layout.astro';
 
 import Main from "../components/Main.astro";
 
-import { Image } from 'astro:assets';
 import Card from '../components/Card.astro';
 
-
-
-
-import H1 from "../components/H1.astro";
 import { Icon } from "astro-icon";
+
+
 
 ---
 
@@ -21,7 +17,7 @@ import { Icon } from "astro-icon";
 
 	<Main>
     
-<h2 class="text-center uppercase">Vung Tau is a lively and bustling area with a high density of restaurants and coffee shops that offer a variety of cuisines and beverages. You can also find many massage shops where you can relax and enjoy a soothing treatment. The nightlife is vibrant and exciting, with many bars, clubs, and karaoke venues to choose from. Whether you are looking for a casual or a fancy experience, it has something for everyone.</h2>
+<h2 class="text-lg leading-relaxed text-gray-600n justify-around mx-auto max-w-xl text-justify py-3.5">Vung Tau is a lively and bustling area with a high density of restaurants and coffee shops that offer a variety of cuisines and beverages. You can also find many massage shops where you can relax and enjoy a soothing treatment. The nightlife is vibrant and exciting, with many bars, clubs, and karaoke venues to choose from. Whether you are looking for a casual or a fancy experience, it has something for everyone.</h2>
 		
 
 
@@ -30,7 +26,7 @@ import { Icon } from "astro-icon";
 				href="/restaurants"
 				title="Restaurants"
 				body="where to eat"
-				icon="uil:envelope"
+				icon="uil:restaurant"
 			
 				/>
 			
@@ -52,12 +48,22 @@ import { Icon } from "astro-icon";
 				body="Massage or medical treatment ❤️"
 				icon="uil:envelope"
 			/>
-		</ul>
-		<p>still in progress</p>
 
-		<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-			Back
-		  </button>
+			<Card
+				href="/accomodation"
+				title="Accomodation"
+				body="you have many options"
+				icon="uil:envelope"
+			/>
+
+			<Card
+				href="/hotel"
+				title="Hotel"
+				body="thousands of hotels"
+				icon="uil:envelope"
+			/>
+		</ul>
+		
 	</Main>
 
 </Layout>
@@ -65,7 +71,7 @@ import { Icon } from "astro-icon";
 <style>
 	main {
 		margin: auto;
-		padding: 11rem;
+		padding: 21rem;
 		width: 800px;
 		max-width: 200px;
 		color: white;

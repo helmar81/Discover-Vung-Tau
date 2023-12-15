@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Main from "../components/Main.astro";
+
+import H1 from "../components/H1.astro";
+
+
+import { Image } from "astro:assets"
+
+import pearl from "../images/pearl.webp"
+import room from "../images/room.jpg"
+import forward from "../images/forward.png"
+
+---
+
+
+<Layout title="Hotel">
+	<Main>
+		<H1 text="Hotels"/>
+
+		<div class="flex justify-center items-center">
+			<Image src={pearl} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
+		</div>
+		
+	</div>
+    <h2> might cost you 150$/night</h2>
+	<a href="/guide" class="flex items-center gap-x-3 ">
+		<img
+			src="/forward.png"
+			alt="forward icon"
+			width={48}
+			height={44}
+			class=" color grayscale align-right"
+		/>
+	
+</Main>
+
+</Layout>
