@@ -17,7 +17,7 @@ import forward from "../images/forward.png"
 
 <Layout title="Hotel">
 	<Main>
-		<H1 text="Hotels"/>
+		<H1 text="Hotels and Accomodation"/>
 
 		<div class="flex justify-center items-center">
 			<Image src={pearl} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
@@ -26,13 +26,46 @@ import forward from "../images/forward.png"
 	</div>
     <h2> might cost you 150$/night</h2>
 	<a href="/guide" class="flex items-center gap-x-3 ">
-		<img
+		<Image
 			src="/forward.png"
 			alt="forward icon"
 			width={48}
 			height={44}
 			class=" color grayscale align-right"
 		/>
+
+		<style>
+
+			.card {
+			  border: 1px solid #ddd;
+			  border-radius: 8px;
+			  overflow: hidden;
+			  width: 100%;
+			  height: 130%;
+			  margin: 26px;
+			}
+			
+			.card-image {
+			  width: 100%;
+			  height: 500px; /* Adjust the height as needed */
+			  object-fit: cover;
+			}
+			
+			.card-content {
+			  padding: 26px;
+			}
+			
+			.icon {
+			  /* Add styles for your icon */
+			}
+			
+			h2 {
+			  padding: 1px;
+			  color:blue;
+			}
+			
+			</style>
+			
 	
 </Main>
 

@@ -18,28 +18,133 @@ import sun from "../images/sun.jpg"
 	<Main>
 		<H1 text="Coffee"/>
 
-		<p>
-			Vietnam is the second largest coffee producer in the world after Brazil. According to the USDA Foreign Agricultural Service, Vietnam’s coffee production estimate for 2022/2023 is 29.750 million bags, green bean equivalent (GBE), based on lower yields, high production costs, and a drop in cultivation area1. Vietnam mainly grows Robusta coffee, which accounts for more than 90% of its total output and has an average annual turnover of around US$3 billion2. Coffee production has been a major source of income for Vietnam since the early 20th century, when it was introduced by the French in 1857. Coffee consumption in Vietnam is also very popular, especially instant coffee that is widely available and affordable. Do you like Vietnamese coffee? 😊
+		<p class="text-justify  p-3 py-3.5">
+			Vietnam is the second largest coffee producer in the world after Brazil. According to the USDA Foreign Agricultural Service, Vietnam’s coffee production 
+			estimate for 2022/2023 is 29.750 million bags, green bean equivalent (GBE), based on lower yields, 
+			high production costs, and a drop in cultivation area1. Vietnam mainly grows Robusta coffee, 
+			which accounts for more than 90% of its total output and has an average annual turnover of around US$3 billion2. 
+			Coffee production has been a major source of income for Vietnam since the early 20th century, 
+			when it was introduced by the French in 1857. Coffee consumption in Vietnam is also very popular, 
+			and is widely available and affordable. Do you like Vietnamese coffee? 😊
 		</p>
 
-		<div class="flex justify-center items-center">
-			<Image src={sun} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
+		<article class="card">
+			<img src="/images/kem.jpg" alt="Card Image" class="card-image">
+			<div class="card-content">
+				<div class="mx-auto max-w-xl text-justify py-3.5">
+					<h2>Cafe-Kem 360</h2>
+				
+					 <div class="mt-5">
+					   <div class="flex items-center mt-2 space-x-2 text-gray-600">
+						
+						 <span>1 Lê Quý Đôn, Phường 1, Thành phố Vũng Tàu 790000, Vietnam</span>
+					   
+					   </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+					  <a
+						   href="tel: +84 909 920 758"> +84 909 920 758</a
+						 >
+
+						</div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+							<a
+		   
+							href="https://www.facebook.com/360CafeKem/" rel="noopener"  target="_blank"  >
+							facebook.com/360CafeKem
+						  </a>
+						  </div>
+						
+					   </div>
+					 </div>
+			  </article>
 		</div>
 
-		
 
 		
+	<article class="card">
+		<img src="/images/sun.jpg" alt="Card Image" class="card-image">
+		<div class="card-content">
+			<div class="mx-auto max-w-xl text-justify py-3.5">
+				<h2>Sea & Sun 2</h2>
+			
+				 <div class="mt-5">
+				   <div class="flex items-center mt-2 space-x-2 text-gray-600">
+					
+					 <span>9346+Q45, Trần Phú, Phường 5, Thành phố Vũng Tàu, Vietnam</span>
+				   
+				   </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+				  <a
+					   href="tel:+84 0908 098 138">+84 941 084 779</a
+					 >
+					
+				   </div>
+				 </div>
+		  </article>
+	</div>
+
+
+	<article class="card">
+		<img src="/images/garden.jpg" alt="Card Image" class="card-image">
+		<div class="card-content">
+			<div class="mx-auto max-w-xl text-justify py-3.5">
+				<h2>Rừng coffee</h2>
+			
+				 <div class="mt-5">
+				   <div class="flex items-center mt-2 space-x-2 text-gray-600">
+					
+					 <span> Vũng Tàu, Vietnam</span>
+				   
+				   </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+				  <a
+					   href="tel:+84 941 084 779">unknown</a
+					 >
+					
+				   </div>
+				 </div>
+		  </article>
+	</div>
+
+</card>
+<a href="/nightlife" class="flex items-center gap-x-3 ">
+	<img
+		src="/forward.png"
+		alt="forward icon"
+		width={48}
+		height={44}
+		class=" color grayscale align-right"
+	/>
       
-    <img src="/images/garden.jpg" alt="wellness=" class="rounded-2xl shadow-xl mb-4  object-cover">
+   
+		<style>
 
-	<a href="/nightlife" class="flex items-center gap-x-3 ">
-		<img
-			src="/forward.png"
-			alt="forward icon"
-			width={48}
-			height={44}
-			class=" color grayscale align-right"
-		/>
+			.card {
+			  border: 1px solid #ddd;
+			  border-radius: 8px;
+			  overflow: hidden;
+			  width: 100%;
+			  height: 130%;
+			  margin: 26px;
+			}
+			
+			.card-image {
+			  width: 100%;
+			  height: 500px; /* Adjust the height as needed */
+			  object-fit: cover;
+			}
+			
+			.card-content {
+			  padding: 26px;
+			}
+			
+			.icon {
+			  /* Add styles for your icon */
+			}
+			
+			h2 {
+			  padding: 1px;
+			  color:blue;
+			}
+			
+			</style>
+			
 
 </Main>
 

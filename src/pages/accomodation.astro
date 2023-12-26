@@ -11,21 +11,72 @@ import { Image } from "astro:assets"
 import kem from "../images/kem.jpg"
 import room from "../images/room.jpg"
 import forward from "../images/forward.png"
+import pearl from "../images/pearl.webp"
+
+import { Icon } from "astro-icon";
 
 ---
 
 
 <Layout title="Accomodation">
 	<Main>
-		<H1 text="Accomodation"/>
+	
 
-		<div class="flex justify-center items-center">
-			<Image src={room} alt="rent" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
-		</div>
+		<H1 text="Hotels and Accomodation"/>
+
 		
-	</div>
-    <h2> get a room for less than 150$</h2>
-	<a href="/hotel" class="flex items-center gap-x-3 ">
+		<article class="card">
+			<img src="/images/room.jpg" alt="Card Image" class="card-image">
+			<div class="card-content">
+				<div class="mx-auto max-w-xl text-justify py-3.5">
+					<h2>Mr. Hung</h2>
+				
+					 <div class="mt-5">
+					   <div class="flex items-center mt-2 space-x-2 text-gray-600">
+						
+						 <span>Hoang Hoa Tam Vũng Tàu Vietnam</span>
+
+						</div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+							<a
+							  href="mailto:danghungvnpt@gmail.com">danghungvnpt@gmail.com</a
+							>
+					   
+					   </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+					  <a
+						   href="tel: +84 91 312 95 55"> +84 91 312 95 55</a
+						 >
+
+						</div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+							<a
+		   
+							href="https://www.facebook.com/profile.php?id=100010996082496" rel="noopener"  target="_blank"  >
+							facebook.com/danghung
+						  </a>
+						  </div>
+						
+					   </div>
+					 </div>
+			  </article>
+		</div>
+
+
+	<article class="card">
+		<img src="/images/vt.png" alt="Card Image" class="card-image">
+		<div class="card-content">
+		  <h2>Hotels</h2>
+		  <p>start from 10$/night</p>
+		 
+		  <span>you have many options</span>
+		  <h2> it is your choice</h2>
+		</div>
+	
+	  </article>
+</div>
+
+    
+
+	
+	<a href="/service" class="flex items-center gap-x-3 ">
 		<img
 			src="/forward.png"
 			alt="forward icon"
@@ -33,6 +84,39 @@ import forward from "../images/forward.png"
 			height={44}
 			class=" color grayscale align-right"
 		/>
+
+		<style>
+
+			.card {
+			  border: 1px solid #ddd;
+			  border-radius: 8px;
+			  overflow: hidden;
+			  width: 100%;
+			  height: 130%;
+			  margin: 26px;
+			}
+			
+			.card-image {
+			  width: 100%;
+			  height: 500px; /* Adjust the height as needed */
+			  object-fit: cover;
+			}
+			
+			.card-content {
+			  padding: 26px;
+			}
+			
+			.icon {
+			  /* Add styles for your icon */
+			}
+			
+			h2 {
+			  padding: 1px;
+			  color:blue;
+			}
+			
+			</style>
+			
 	
 </Main>
 

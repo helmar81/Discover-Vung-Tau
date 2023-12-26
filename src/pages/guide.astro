@@ -6,7 +6,7 @@ import Main from "../components/Main.astro";
 
 import Card from '../components/Card.astro';
 
-
+import sun from "../images/sun.jpg"
 
 
 ---
@@ -16,7 +16,7 @@ import Card from '../components/Card.astro';
 
 	<Main>
     
-<h2 class="text-lg leading-relaxed text-gray-600n justify-around mx-auto max-w-xl text-justify py-3.5">Vung Tau is a lively and bustling area with a high density of restaurants and coffee shops that offer a variety of cuisines and beverages. You can also find many massage shops where you can relax and enjoy a soothing treatment. The nightlife is vibrant and exciting, with many bars, clubs, and karaoke venues to choose from. Whether you are looking for a casual or a fancy experience, it has something for everyone.</h2>
+<h2 class="text-justify  p-3 py-3.5">Vung Tau is a lively and bustling area with a high density of restaurants and coffee shops that offer a variety of cuisines and beverages. You can also find many massage shops where you can relax and enjoy a soothing treatment. The nightlife is vibrant and exciting, with many bars, clubs, and karaoke venues to choose from. Whether you are looking for a casual or a fancy experience, it has something for everyone.</h2>
 		
 
 
@@ -34,17 +34,20 @@ import Card from '../components/Card.astro';
 				title="Coffee Shops"
 				body="there are plenty of them"
 				
+				
 			/>
 			<Card
 				href="/nightlife"
 				title="Nightlife"
 				body="explore the many bars here"
 				
+				
 			/>
 			<Card
 				href="/wellness"
 				title="Wellness"
 				body="Massage or medical treatment ❤️"
+				
 				
 			/>
 
@@ -53,17 +56,22 @@ import Card from '../components/Card.astro';
 				title="Accomodation"
 				body="you have many options"
 				
+				
 			/>
 
+			
+
 			<Card
-				href="/hotel"
-				title="Hotel"
+				href="/service"
+				title="Shopping and Services"
 				body="thousands of hotels"
+				
 				
 			/>
 		</ul>
 
 		<a href="/" class="flex items-center gap-x-3 ">
+			<h2>.....................................</h2>
 			<img
 				src="/forward.png"
 				alt="forward icon"
@@ -71,6 +79,7 @@ import Card from '../components/Card.astro';
 				height={44}
 				class=" color grayscale align-right"
 			/>
+
 		
 	</Main>
 

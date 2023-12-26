@@ -1,8 +1,12 @@
 ---
+import Image from 'https://astro.build/logo.svg';
+import sun from "../images/sun.jpg"
+
 interface Props {
 	title: string;
 	body: string;
 	href: string;
+	
 	
 }
 
@@ -17,6 +21,7 @@ const { href, title, body } = Astro.props;
 		</h2>
 		<p>
 			{body}	
+			
 		</p>
 
 		
@@ -67,4 +72,17 @@ const { href, title, body } = Astro.props;
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));
 	}
+
+
+  .card-image {
+    width: 200px;
+    height: 200px;
+  }
+
+
+	.image:is(:hover, :focus-within) h2 {
+		color: rgb(var(--accent-light));
+	}
+
+	
 </style>

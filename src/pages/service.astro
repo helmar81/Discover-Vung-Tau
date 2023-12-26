@@ -1,0 +1,99 @@
+---
+import Main from "../components/Main.astro";
+import Layout from "../layouts/Layout.astro";
+
+import { Image } from 'astro:assets';
+
+import newHaircut from "/images/newHaircut.jpg"
+
+import { Icon } from "astro-icon";
+
+
+---
+
+<Layout title="About">
+ 
+    <Main>
+
+<article class="card">
+    <img src="/images/newHaircut.jpg" alt="Card Image" class="card-image">
+    <div class="card-content">
+      <h2>Phong</h2>
+      <p>Hairdresser</p>
+      <Icon class="text-gray-400 w-10 h-10 flex items-center mt-2 space-x-2" name="uil:map-marker" />
+      <span>13 Trịnh Hoài Đức, khu phố 4, - Vũng Tàu, Vietnam</span>
+      
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="../images/thaian.jpg" alt="Card Image" class="card-image">
+    <div class="card-content">
+      <h2>Thai An</h2>
+      
+      <p>Photo  Service</p>
+      <Icon class="text-gray-400 w-8 h-8" name="uil:map-marker" />
+      <span>248 Trương Công Định, Phường 3,Vũng Tầu, Vietnam</span>
+      
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="../images/bike.jpg" alt="Card Image" class="card-image">
+    <div class="card-content">
+      <h2>My Ha</h2>
+      
+      <p>Bike Service</p>
+      <Icon class="text-gray-400 w-8 h-8" name="uil:map-marker" />
+      <span>60 Đường Xô Viết Nghệ Tĩnh Vũng Tầu,Vietnam
+    </span>
+      
+    </div>
+  </article>
+
+  <a href="/guide" class="flex items-center gap-x-3 ">
+		<img
+			src="/forward.png"
+			alt="forward icon"
+			width={48}
+			height={44}
+			class=" color grayscale align-right"
+		/>
+
+</Main>
+
+</Container>
+</Layout>
+
+
+ <style>
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  height: 130%;
+  margin: 26px;
+}
+
+.card-image {
+  width: 100%;
+  height: 500px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 26px;
+}
+
+.icon {
+  /* Add styles for your icon */
+}
+
+h2 {
+  padding: 1px;
+  color:blue;
+}
+
+</style>

@@ -15,82 +15,44 @@ import { Image } from "astro:assets"
 		<H1 text="Wellness"/>
       
     
-	<div class="flex justify-center items-center">
-		<Image src={WellnessHomes} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
+		<article class="card">
+			<img src="/images/WellnessHomes.jpg" alt="Card Image" class="card-image">
+			<div class="card-content">
+			  
+			  
+			 
+			  <div class="mx-auto max-w-xl text-justify py-3.5">
+				<h2>Wellness Homes</h2>
+			
+				 <div class="mt-5">
+				   <div class="flex items-center mt-2 space-x-2 text-gray-600">
+					
+					 <span>B4 Thuỳ Dương 3, Ward 10 Vung Tau City, Vietnam</span>
+				   </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+					 <a
+					   href="mailto:hello@stablotemplate.com">hoctap1537@gmail.com</a
+					 >
+				   </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+				  <a
+					   href="tel:+84 0908 098 138">+84 0908 098 138</a
+					 >
+					</div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+					 <a
+    
+					 href="https://wellness-homes.netlify.app/" rel="noopener"  target="_blank"  >
+					 wellness-homes.netlify.app
+				   </a>
+				   </div>
+				 </div>
+		  </article>
 	</div>
-	
 
-	<div class="mx-auto max-w-xl text-justify py-3.5">
-		<p class="text-lg leading-relaxed text-gray-600n justify-around">
-			Wellness Homes Vung Tau offers specific health and wellness services and is proud to be one of the most prestigious wellness providers in Vietnam, led by physicians. Situated near the beautiful Long Cung resort beach in Vung Tau, we aim to extend our services to foreigners residing in Vung Tau and other locations across Vietnam. 
-	If you're interested in general health and well-being without resorting to drugs, we offer services such as:
 	
-		</p>
-		<div class="mt-8">
-		 
-		</div>
-		
-		<div class="text-lg leading-relaxed text-gray-600n justify-around">
-
-			<ol>
-			<li>
-			- Vein intersection and clearance of blockages in energy and blood flows.
-			</li>
-	
-			<li>
-			- Rehabilitation of blood flow to prevent blood clots that may lead to strokes.
-	
-			</li>
-	
-			<li>
-				- Insomnia treatment to reduce stress and anxiety.
-	
-			</li>
-		</ol>
-			</div>	
-	  </div>
-	
-	  <div class="mx-auto max-w-xl text-justify py-3.5">
-		<p class="text-lg leading-relaxed text-gray-600n justify-around">
-			Their focus is on providing treatments and services that enhance both physical and mental well-being. 
-		</p>
-		<div class="mt-8">
-		 
-		</div>
-	  </div>
-
-	  <div class="mx-auto max-w-xl text-justify py-3.5">
-	  <p class="text-lg leading-relaxed text-gray-500 mt-3">
-		You find them here:
-	   </p>
-	   <div class="mt-5">
-		 <div class="flex items-center mt-2 space-x-2 text-gray-600">
-		  
-		   <span>B4 Thuỳ Dương 3, Ward 10 Vung Tau City, Vietnam</span>
-		 </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-		   <a
-			 href="mailto:hello@stablotemplate.com">hoctap1537@gmail.com</a
-		   >
-		 </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-		<a
-			 href="tel:+84 0908 098 138">+84 0908 098 138</a
-		   >
-		 </div>
-	   </div>
 
 	 
-<card></card>
-		<div class="mx-auto max-w-xl text-justify py-3.5">
-			<p class="text-lg leading-relaxed text-gray-600n justify-around">
-				Get a new haircut for 1.50$
-		
-			</p>
-			<div class="mt-8">
-			 
-			</div>
-		<div class="flex justify-center items-center">
-			<Image src={newHaircut} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
-		</div>
+
+
+
 	</card>
 		<a href="/accomodation" class="flex items-center gap-x-3 ">
 			<img
@@ -100,6 +62,40 @@ import { Image } from "astro:assets"
 				height={44}
 				class=" color grayscale align-right"
 			/>
+
+			<style>
+
+				.card {
+				  border: 1px solid #ddd;
+				  border-radius: 8px;
+				  overflow: hidden;
+				  width: 100%;
+				  height: 130%;
+				  margin: 26px;
+				}
+				
+				.card-image {
+				  width: 100%;
+				  height: 500px; /* Adjust the height as needed */
+				  object-fit: cover;
+				}
+				
+				.card-content {
+				  padding: 26px;
+				}
+				
+				.icon {
+				  /* Add styles for your icon */
+				}
+				
+				h2 {
+				  padding: 1px;
+				  color:blue;
+				}
+				
+				</style>
+				
+		
 
 </Main>
 

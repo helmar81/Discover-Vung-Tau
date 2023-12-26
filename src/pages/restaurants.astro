@@ -18,15 +18,58 @@ import shrimps from "../images/shrimps.jpg"
 	<Main>
 		<H1 text="Dinning"/>
 
-		<div class="flex justify-center items-center">
-			<Image src={kem} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
+		<article class="card">
+			<img src="/images/shrimps.jpg" alt="Card Image" class="card-image">
+			<div class="card-content">
+				<div class="mx-auto max-w-xl text-justify py-3.5">
+					<h2>Thuan Phuc Seafood Noodle</h2>
+				
+					 <div class="mt-5">
+					   <div class="flex items-center mt-2 space-x-2 text-gray-600">
+						
+						 <span>73 Đ. Hoàng Hoa Thám, Phường Thắng Tam, Thành phố Vũng Tầu, Vietnam</span>
+					   
+					   </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+					  <a
+						   href="tel:+84907480751"> +84907480751</a
+						 >
+						
+					   </div>
+					 </div>
+			  </article>
 		</div>
-		<div class="flex justify-center items-center">
-			<Image src={shrimps} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
+
+		<article class="card">
+			<img src="/images/menue.webp" alt="Card Image" class="card-image">
+			<div class="card-content">
+				<div class="mx-auto max-w-xl text-justify py-3.5">
+					<h2>OC 34 Seafood</h2>
+				
+					 <div class="mt-5">
+					   <div class="flex items-center mt-2 space-x-2 text-gray-600">
+						
+						 <span>2 Đ. Hoàng Hoa Thám, Phường 3,Vũng Tàu, Vietnam</span>
+					   
+					   </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+					  <a
+						   href="tel: +84774199163"> +84774199163</a
+						 >
+
+						</div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+							<a
+		   
+							href="https://www.foody.vn/vung-tau/oc-34" rel="noopener"  target="_blank"  >
+							foody.vn/vung-tau/oc-34
+						  </a>
+						  </div>
+						
+					   </div>
+					 </div>
+			  </article>
 		</div>
-		<div class="flex justify-center items-center">
-		<Image src={menue} alt="sunset" class="rounded-2xl shadow-xl mb-4 object-cover "  width="1024" height="800"decoding="async" loading="lazy"/>	
-	</div>
+
+
+		
 
 	<a href="/coffee" class="flex items-center gap-x-3 ">
 		<img
@@ -36,6 +79,39 @@ import shrimps from "../images/shrimps.jpg"
 			height={44}
 			class=" color grayscale align-right"
 		/>
+
+		<style>
+
+			.card {
+			  border: 1px solid #ddd;
+			  border-radius: 8px;
+			  overflow: hidden;
+			  width: 100%;
+			  height: 130%;
+			  margin: 26px;
+			}
+			
+			.card-image {
+			  width: 100%;
+			  height: 500px; /* Adjust the height as needed */
+			  object-fit: cover;
+			}
+			
+			.card-content {
+			  padding: 26px;
+			}
+			
+			.icon {
+			  /* Add styles for your icon */
+			}
+			
+			h2 {
+			  padding: 1px;
+			  color:blue;
+			}
+			
+			</style>
+			
 	
 </Main>
 
