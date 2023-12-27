@@ -8,6 +8,14 @@ import Card from '../components/Card.astro';
 
 import sun from "../images/sun.jpg"
 
+import { Image } from "astro:assets"
+
+import loaderEyes from "svgs/loader-eyes.svg?raw";
+
+import { Icon } from "astro-icon";
+
+import card from "/images/card.png"
+
 
 ---
 
@@ -25,7 +33,7 @@ import sun from "../images/sun.jpg"
 				href="/restaurants"
 				title="Restaurants"
 				body="where to eat"
-				
+				icon="eat"
 			
 				/>
 			
@@ -33,6 +41,8 @@ import sun from "../images/sun.jpg"
 				href="/coffee"
 				title="Coffee Shops"
 				body="there are plenty of them"
+				icon="/images/nightlife.jpg"
+
 				
 				
 			/>
@@ -40,6 +50,8 @@ import sun from "../images/sun.jpg"
 				href="/nightlife"
 				title="Nightlife"
 				body="explore the many bars here"
+				icon="envelope" 
+
 				
 				
 			/>
@@ -47,6 +59,8 @@ import sun from "../images/sun.jpg"
 				href="/wellness"
 				title="Wellness"
 				body="Massage or medical treatment ❤️"
+				icon="uil:envelope"
+
 				
 				
 			/>
@@ -55,16 +69,19 @@ import sun from "../images/sun.jpg"
 				href="/accomodation"
 				title="Accomodation"
 				body="you have many options"
+				icon=  name="envelope"
+
 				
 				
 			/>
 
-			
 
 			<Card
 				href="/service"
 				title="Shopping and Services"
 				body="thousands of hotels"
+				icon=  name="envelope"
+
 				
 				
 			/>
@@ -94,7 +111,7 @@ import sun from "../images/sun.jpg"
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
-		padding: 8;
+		padding: 8px;
 	}
 	.astro-a {
 		position: absolute;
